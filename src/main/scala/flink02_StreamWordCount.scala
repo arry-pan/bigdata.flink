@@ -7,7 +7,7 @@ object flink02_StreamWordCount {
     val env: StreamExecutionEnvironment = StreamExecutionEnvironment.getExecutionEnvironment
 
     //2.读取文件
-    val lines: DataStream[String] = env.socketTextStream("localhost",9999)
+    val lines: DataStream[String] = env.socketTextStream("hadoop102",9999)
 
     // 3. 转换数据格式
     val wordToOne: DataStream[(String, Long)] = lines.flatMap(_.split(" ")).map((_, 1L))
