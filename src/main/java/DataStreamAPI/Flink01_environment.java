@@ -3,8 +3,8 @@ package DataStreamAPI;
 import org.apache.flink.streaming.api.datastream.DataStreamSource;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import scala.collection.immutable.Seq;
-
 public class Flink01_environment {
+
         public static void main(String[] args) throws Exception {
 
 //                // 1、创建执行环境
