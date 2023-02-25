@@ -4,7 +4,7 @@ import org.apache.flink.api.common.functions.MapFunction
 import org.apache.flink.api.scala.createTypeInformation
 import org.apache.flink.streaming.api.scala.{DataStream, StreamExecutionEnvironment}
 
-object flink5_map {
+object flink5_01_map {
   def main(args: Array[String]): Unit = {
 
     val env: StreamExecutionEnvironment = StreamExecutionEnvironment.getExecutionEnvironment

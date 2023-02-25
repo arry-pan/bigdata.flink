@@ -4,7 +4,7 @@ import org.apache.flink.api.common.functions.{FilterFunction, MapFunction}
 import org.apache.flink.api.scala.{createTypeInformation, scalaNothingTypeInfo}
 import org.apache.flink.streaming.api.scala.{DataStream, StreamExecutionEnvironment}
 
-object flink5_filter {
+object flink5_02_filter {
   def main(args: Array[String]): Unit = {
 
     val env: StreamExecutionEnvironment = StreamExecutionEnvironment.getExecutionEnvironment
